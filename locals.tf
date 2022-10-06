@@ -1,7 +1,7 @@
 locals {
-    prefix_name    = format("%s_%s", var.environment, var.service)
-    
-    # Regras do security group para os lambdas
+  prefix_name = format("%s_%s", var.environment, var.service)
+
+  # Regras do security group para os lambdas
   sg_lambda_rules_ingress = {
     #1 = { description = "Access to HTTP", protocol = "tcp", from_port = "80", to_port = "80", cidr_blocks = ["0.0.0.0/0"] }
   }

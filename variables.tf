@@ -20,7 +20,7 @@ variable "owner" {
 
 variable "subnet_ids" {
   description = "ID da subnet utilizada para criar as instâncias do auto scaling"
-  type        = list
+  type        = list(any)
 }
 
 variable "aws_vpc" {
